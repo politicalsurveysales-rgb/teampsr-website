@@ -12,3 +12,31 @@
 .audio-detail h3{font:700 14px Manrope,sans-serif;color:#192744;margin:0 0 9px}.audio-detail p{font-size:11px;line-height:1.75;color:#788498;margin:0}
 .contact-email div{display:flex;flex-direction:column;gap:7px}.contact-email a{font-size:12px}
 @media(max-width:680px){.brand-logo{width:155px;max-height:48px}.audio-highlights{grid-template-columns:1fr}.audio-details-grid{grid-template-columns:1fr 1fr}.audio-stat{padding:19px}}
+
+
+/* Multi-page navigation and content additions */
+.page-hero{background:linear-gradient(120deg,#101b35,#15384a);color:#fff;padding:86px 0 76px}
+.page-hero h1{font:800 clamp(2.3rem,5vw,4rem)/1.08 Manrope,sans-serif;letter-spacing:-.04em;margin:14px 0 18px;max-width:850px}
+.page-hero h1 em{color:#7bcfc3;font-style:normal}
+.page-hero p{color:#c5d0df;max-width:760px;line-height:1.8;font-size:1.08rem}
+.page-content{padding:70px 0}
+.content-narrow{max-width:900px;margin:0 auto}
+.content-narrow h2{font:800 1.65rem Manrope,sans-serif;color:#101b35;margin:36px 0 12px}
+.content-narrow h3{font:700 1.12rem Manrope,sans-serif;color:#101b35;margin:24px 0 8px}
+.content-narrow p,.content-narrow li{color:#526174;line-height:1.85}
+.content-narrow ul{padding-left:22px}
+.content-narrow a{color:#147f80;text-decoration:underline;text-underline-offset:3px}
+.page-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}
+.info-panel{background:#f4f7f8;border:1px solid #e4eaed;border-radius:16px;padding:26px}
+.info-panel h3{margin:0 0 10px;color:#101b35;font:700 1.15rem Manrope,sans-serif}
+.info-panel p{margin:0;color:#596779;line-height:1.75}
+.breadcrumb{font-size:.86rem;color:#a9c3cc;letter-spacing:.08em;text-transform:uppercase}
+.site-header nav a[aria-current="page"]{color:#70c9bd}
+.contact-form .form-status{font-size:.92rem;color:#617184;line-height:1.6;margin-top:12px}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;box-sizing:border-box}
+.contact-form .hp-field{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.policy-callout{background:#eef7f5;border-left:4px solid #70c9bd;padding:18px 20px;border-radius:8px;margin:22px 0}
+.footer-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px}
+.footer-links a{color:inherit;text-decoration:none}
+.footer-links a:hover{text-decoration:underline}
+@media(max-width:700px){.page-hero{padding:62px 0 55px}.page-content{padding:48px 0}.page-grid{grid-template-columns:1fr}}

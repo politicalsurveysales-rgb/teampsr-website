@@ -1,40 +1,29 @@
-# Team PSR website
+# Team PSR website (multi-page)
 
-A responsive static website for Team PSR, built with HTML, CSS and JavaScript.
+Static website for GitHub Pages. Existing logo, visual style and domain CNAME are retained.
 
-## Files
-- `index.html` — website content
-- `styles.css` — layout and responsive design
-- `script.js` — mobile navigation and email enquiry form
-- `CNAME` — custom domain for GitHub Pages
-- `assets/favicon.svg` — browser tab icon
+## Pages
+- `index.html` — homepage
+- `about.html` — about Team PSR and its operating structure
+- `services.html` — research services
+- `data-solutions.html` — data solutions and permission safeguards
+- `contact.html` — enquiry form and contact details
+- `privacy-policy.html` — public privacy notice
+- `thank-you.html` — form return page
 
-## Publish free with GitHub Pages
-1. Create/sign in to a GitHub account at https://github.com/signup
-2. Create a new **public** repository named `teampsr-website`.
-3. Upload all files and the `assets` folder from this ZIP. Keep the folder structure.
-4. In the repository, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
-6. In the Custom domain field, enter `www.teampsr.com` and save. The included `CNAME` file contains the same domain.
-7. In Zoho domain DNS management, add the GitHub Pages DNS records described at:
-   https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
-8. Enable **Enforce HTTPS** in GitHub Pages after DNS verification.
+## Publish on GitHub Pages
+1. Unzip this package.
+2. In the existing `teampsr-website` repository, upload/replace the files in the repository root and the `assets` folder. Keep the `CNAME` file.
+3. Commit the changes to the `main` branch. GitHub Pages should redeploy automatically.
+4. Check `https://www.teampsr.com/` and `https://www.teampsr.com/privacy-policy.html`.
 
-## Important: keep Zoho Mail working
-Do not delete or replace existing MX, SPF, DKIM or DMARC records. Add only the website records GitHub instructs you to add. If you are unsure, take a screenshot/export of the current DNS records before editing.
+## Contact form setup — important
+The form uses FormSubmit and sends to `sales@teampsr.com`. FormSubmit requires a one-time activation: after the first test submission, open the activation email sent to `sales@teampsr.com` and confirm it. Check Spam/Junk. Until activated, the form will not deliver messages. After activation, test again and confirm receipt. FormSubmit is a third-party service; its availability and processing are governed by its own terms and privacy notice.
 
-## Contact form
-The enquiry form opens the visitor's default email application and prepares a message addressed to `sales@teampsr.com`. It does not store submissions or send mail from the website server. To receive enquiries without requiring the visitor's email app, connect a form service later.
+If FormSubmit is not acceptable or activation mail does not arrive, replace it with another form backend before advertising the form as operational. Do not claim the form works until a real test email is received.
 
-## Before publishing
-- Confirm that `sales@teampsr.com` is an active mailbox or alias in Zoho Mail.
-- Replace the text logo with your official Team PSR logo if desired.
-- Add verified phone number, office address, client references or project statistics only when you want them public.
+## Email / DNS
+Do not alter Zoho MX, SPF, DKIM or other mail DNS records when publishing website changes. The `CNAME` file should remain `www.teampsr.com`.
 
-
-## Contact form email delivery (FormSubmit)
-The contact form is configured to send submissions to:
-- politicalsurveysales@gmail.com (primary recipient)
-- sales@teampsr.com (CC recipient)
-
-**One-time activation required:** After the website is published, submit a test enquiry. FormSubmit will send an activation/confirmation email to `politicalsurveysales@gmail.com`. Open that email and approve the form. After activation, submissions will be delivered to both addresses. Check Spam if the activation email is not in Inbox. FormSubmit is a third-party service; its availability and limits are subject to its terms.
+## Privacy notice review
+The privacy notice is a careful draft based on the collection process described by Team PSR. Before treating it as final, review it against actual collection scripts, client contracts, retention/security practices, participant rights handling and applicable Indian law. It does not replace project-specific notices, consents or client permissions.
