@@ -19,7 +19,7 @@ if (year) year.textContent = new Date().getFullYear();
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   const EMAILJS_PUBLIC_KEY = "8aQWfmFLzHRZmcOyc";
-  const EMAILJS_SERVICE_ID = "service_zrg6mca";
+  const EMAILJS_SERVICE_ID = "service_j64e0ma";
   const EMAILJS_TEMPLATE_ID = "template_f7v2wb7";
   const statusEl = document.getElementById("formStatus");
   const submitButton = document.getElementById("submitButton");
